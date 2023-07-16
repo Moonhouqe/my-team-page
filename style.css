@@ -1,0 +1,48 @@
+.container{
+    width: 100%;
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+.text-area{
+    display: flex;
+}
+.text-area > div{
+    width: 100%;
+}
+.main-img{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    row-gap: 0px;
+    margin-top: 100px;
+}
+img{
+    height: 400px;
+    width: 300px;
+}
+.common{
+    margin-top: 80px;
+}
+
+/* ...........media quary................ */
+@media screen and (max-width:576px) {
+    .text-area ,.main-img {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-img{
+        gap: 50px;
+    }
+    .common{
+        margin-top: 10px;
+}
+}
+/* ...........medium device................. */
+@media screen and (min-width:577)and(max-width:992){
+    .main-img{
+        display: grid;
+       grid-template-columns: repeat(2 ,1fr);
+    }
+}
+   
